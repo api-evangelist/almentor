@@ -1,8 +1,25 @@
 aid: almentor
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/almentor.png
 name: Almentor
-description: 'Almentor is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Applicative SaaS. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Almentor is a Dubai (UAE) based video e-learning platform delivering the largest high-quality
+  Arabic continuous-learning video library, founded in 2016 and launched in January 2018 by Ihab Fikry
+  and Ibrahim Kamel. It serves both individual learners (B2C) and organizations (B2B via business.almentor.net)
+  with paid courses, free talks, crash courses, and books across health, humanities, technology, entrepreneurship,
+  business management, lifestyle, and corporate communication, delivered by hundreds of experts and educators
+  across the MENA region. Backed by Partech, Almentor has delivered more than three million learning experiences.
+  Almentor publishes no public developer/API program; this profile is maintained as a company record in the
+  API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/almentor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +30,17 @@ x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+x-enriched: '2026-07-17'
+x-enrich-note: 'No public developer/API surface found; api.almentor.net not a documented API program. www.almentor.net is an Angular SPA returning 200 for all paths, so /.well-known and /llms.txt probes are false positives (not real). Identity hygiene only.'
 tags:
 - Company
 - Applicative Saas
+- E-Learning
+- Online Education
+- Video Learning
+- MENA
+- Arabic Content
+- Professional Development
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +50,12 @@ maintainers:
 common:
 - type: Website
   url: https://www.almentor.net/
+- type: About
+  url: https://about.almentor.net/
+- type: Business
+  url: https://business.almentor.net/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
